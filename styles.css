@@ -164,14 +164,6 @@ body::before {
   color: var(--text);
 }
 
-.mission-copy {
-  margin: 1rem 0 0;
-  max-width: 58ch;
-  font-size: 1rem;
-  line-height: 1.75;
-  color: var(--muted);
-}
-
 .quote-credit {
   margin: 0.4rem 0 0;
   font-size: 0.95rem;
@@ -293,6 +285,7 @@ main {
 
 .accent-panel .section-tag,
 .accent-panel p,
+.detail-list-accent li,
 .quote-panel .section-tag,
 .quote-panel h2 {
   color: inherit;
