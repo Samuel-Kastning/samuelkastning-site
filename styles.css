@@ -56,20 +56,21 @@ body::before {
 }
 
 .hero {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-  grid-template-rows: auto auto;
   align-items: start;
   column-gap: 1.5rem;
-  row-gap: 0.75rem;
-  padding: 1.25rem;
+  padding: 4.75rem 1.25rem 1.25rem;
   border-radius: 32px;
   background: linear-gradient(145deg, rgba(255, 248, 240, 0.9), rgba(244, 232, 216, 0.82));
 }
 
 .topbar {
-  grid-column: 1;
-  grid-row: 1;
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  right: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -105,21 +106,17 @@ body::before {
 }
 
 .hero-copy {
-  grid-column: 1;
-  grid-row: 2;
   display: block;
-  padding: 0.35rem 0.5rem 0.25rem;
+  padding: 0.25rem 0.5rem 0.25rem;
 }
 
 .hero-side {
-  grid-column: 2;
-  grid-row: 1 / span 2;
   min-width: 0;
 }
 
 .hero-portrait {
   margin: 0;
-  height: 500px;
+  height: 430px;
   overflow: hidden;
   border-radius: 28px;
   border: 1px solid rgba(126, 83, 50, 0.16);
@@ -146,8 +143,9 @@ body::before {
 
 .hero-copy h1 {
   margin-top: 0.2rem;
-  font-size: clamp(2.2rem, 4vw, 3.4rem);
-  max-width: 12ch;
+  font-size: clamp(2.1rem, 3.8vw, 3rem);
+  line-height: 0.98;
+  max-width: 8.5ch;
 }
 
 .intro,
@@ -156,18 +154,18 @@ body::before {
 .contact-copy,
 .hero-card li,
 .detail-list li {
-  font-size: 1.05rem;
-  line-height: 1.75;
+  font-size: 1.02rem;
+  line-height: 1.7;
   color: var(--muted);
 }
 
 .mission-quote {
-  margin: 1.1rem 0 0;
+  margin: 0.9rem 0 0;
   padding-left: 1rem;
   border-left: 3px solid var(--accent);
   font-family: "Fraunces", serif;
-  font-size: 1.15rem;
-  line-height: 1.55;
+  font-size: 1.05rem;
+  line-height: 1.5;
   color: var(--text);
 }
 
@@ -183,7 +181,7 @@ body::before {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
-  margin-top: 1.25rem;
+  margin-top: 1rem;
 }
 
 .button {
@@ -371,15 +369,12 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .topbar,
-  .hero-copy,
-  .hero-side {
-    grid-column: 1;
-    grid-row: auto;
+  .hero {
+    padding-top: 5rem;
   }
 
   .hero-portrait {
-    height: 420px;
+    height: 360px;
   }
 
   .hero-copy h1 {
@@ -404,11 +399,11 @@ main {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.5rem, 16vw, 4rem);
+    font-size: clamp(2.1rem, 13vw, 3.1rem);
   }
 
   .hero-portrait {
-    height: 340px;
+    height: 320px;
   }
 
   .section-heading h2,
