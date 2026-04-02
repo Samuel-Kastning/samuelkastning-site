@@ -101,13 +101,14 @@ body::before {
 }
 
 .hero-copy {
+  display: grid;
+  align-content: start;
+  gap: 0.9rem;
   padding: 1rem 0.5rem 0.5rem;
 }
 
 .hero-side {
-  display: grid;
-  gap: 1rem;
-  align-self: end;
+  align-self: start;
 }
 
 .hero-portrait {
@@ -138,9 +139,9 @@ body::before {
 }
 
 .hero-copy h1 {
-  margin-top: 0.75rem;
-  font-size: clamp(2.6rem, 5vw, 4.25rem);
-  max-width: none;
+  margin-top: 0.2rem;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  max-width: 12ch;
 }
 
 .intro,
@@ -155,12 +156,12 @@ body::before {
 }
 
 .mission-quote {
-  margin: 1.5rem 0 0;
+  margin: 0.4rem 0 0;
   padding-left: 1rem;
   border-left: 3px solid var(--accent);
   font-family: "Fraunces", serif;
-  font-size: 1.25rem;
-  line-height: 1.6;
+  font-size: 1.15rem;
+  line-height: 1.55;
   color: var(--text);
 }
 
@@ -176,7 +177,7 @@ body::before {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
-  margin-top: 2rem;
+  margin-top: 0.75rem;
 }
 
 .button {
@@ -211,6 +212,7 @@ body::before {
 }
 
 .hero-card {
+  margin-top: 0.75rem;
   padding: 1.5rem;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(255, 246, 235, 0.95), rgba(231, 209, 181, 0.9));
@@ -306,7 +308,7 @@ main {
 .setup-name {
   margin: 0 0 0.75rem;
   font-family: "Fraunces", serif;
-  font-size: 1.35rem;
+  font-size: 1.55rem;
   font-weight: 700;
   color: #fff6ef;
 }
