@@ -139,8 +139,8 @@ body::before {
 
 .hero-copy h1 {
   margin-top: 0.75rem;
-  font-size: clamp(3rem, 8vw, 5.9rem);
-  max-width: 11ch;
+  font-size: clamp(2.6rem, 5vw, 4.25rem);
+  max-width: none;
 }
 
 .intro,
@@ -285,10 +285,40 @@ main {
 
 .accent-panel .section-tag,
 .accent-panel p,
-.detail-list-accent li,
 .quote-panel .section-tag,
 .quote-panel h2 {
   color: inherit;
+}
+
+.setup-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.setup-card {
+  padding: 1.15rem 1.1rem;
+  border-radius: 20px;
+  background: rgba(255, 246, 235, 0.1);
+  border: 1px solid rgba(255, 246, 235, 0.18);
+}
+
+.setup-name {
+  margin: 0 0 0.75rem;
+  font-family: "Fraunces", serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff6ef;
+}
+
+.setup-spec {
+  margin: 0.45rem 0 0;
+  line-height: 1.65;
+  color: rgba(255, 246, 239, 0.9);
+}
+
+.setup-spec strong {
+  color: #fff;
 }
 
 .quote-panel {
@@ -333,7 +363,7 @@ main {
   }
 
   .hero-copy h1 {
-    max-width: 12ch;
+    max-width: none;
   }
 }
 
